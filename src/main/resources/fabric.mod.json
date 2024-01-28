@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "revamped_progression_fabric",
+	"version": "${version}",
+	"name": "Revamped progression",
+	"description": "A mod that revamp the progression like no other mod",
+	"authors": [
+		"switchot"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/revamped_progression/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.switchot.revamped_progression.Revamped_progression"
+		],
+		"client": [
+			"net.switchot.revamped_progression.Revamped_progressionClient"
+		],
+		"fabric-datagen": [
+			"net.switchot.revamped_progression.Revamped_progressionDataGenerator"
+		]
+	},
+	"mixins": [
+		"revamped_progression.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
